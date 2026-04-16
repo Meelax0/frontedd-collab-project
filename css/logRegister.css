@@ -1,0 +1,170 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-dark);
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary: #0A4174;
+  --primary-dark: #072d52;
+  --accent: #4A7FA7;
+  --accent-light: #6fa3c7;
+  --bg-light: #F6FAFD;
+  --bg-section: #F5F7FA;
+  --text-dark: #2D2D2D;
+  --text-mid: #5a6a7a;
+  --text-light: #8896a6;
+  --white: #ffffff;
+  --shadow-sm: 0 2px 8px rgba(10,65,116,0.06);
+  --shadow-md: 0 4px 20px rgba(10,65,116,0.10);
+  --shadow-lg: 0 8px 40px rgba(10,65,116,0.14);
+  --radius: 12px;
+  --radius-lg: 20px;
+  --transition: all 0.3s cubic-bezier(.4,0,.2,1);
+}
+/* ===== AUTH PAGES ===== */
+
+.Login-auth,
+.register-auth {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
+    padding: 40px 20px;
+}
+
+.Login-auth .container,
+.register-auth .container {
+    width: 100%;
+    max-width: 500px;
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(10,65,116,0.06);
+}
+
+.Login-auth h1,
+.register-auth h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Login-auth p,
+.register-auth p {
+    color: var(--text-mid);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+/* ===== FORM GROUPS ===== */
+
+.login,
+.password,
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.login label,
+.password label,
+.formGroup label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.login input,
+.password input,
+.formGroup input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid rgba(10,65,116,0.12);
+    border-radius: 10px;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.login input:focus,
+.password input:focus,
+.formGroup input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(74,127,167,0.1);
+    background: var(--white);
+}
+
+/* ===== BUTTON ===== */
+
+.Login-auth button,
+.register-auth button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.Login-auth button:hover,
+.register-auth button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(10,65,116,0.25);
+}
+
+/* ===== AUTH FOOTER ===== */
+
+.auth-register {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.auth-register p {
+    font-size: 0.9rem;
+    color: var(--text-mid);
+}
+
+.auth-register a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.auth-register a:hover {
+    color: var(--accent);
+}
+.hidden{
+    display: none;
+}
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 600px) {
+    .Login-auth .container,
+    .register-auth .container {
+        padding: 30px 20px;
+    }
+
+    .Login-auth h1,
+    .register-auth h1 {
+        font-size: 1.6rem;
+    }
+}
