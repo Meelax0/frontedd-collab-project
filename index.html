@@ -5,26 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ServiFind | Professional Services</title>
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-
     <header>
         <div class="headerCont container">
-            <div class="logo">Servi<span>Find</span></div>
+            <a href="#" class="logo">Servi<span>Find</span></a>
             <nav>
-                <a href="#" class="active">Home</a>
-                <a href="#">Categories</a>
-                <a href="#">Services</a>
+                <a href="#hero" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#categories">Categories</a>
+                <a href="#services">Services</a>
             </nav>
-            <a href="html/logRegister.html" class="btn"">Get Started</a>
+            <a href="#" class="btn">Get Started</a>
         </div>
     </header>
 
-    <section class="hero section">
+    <section id="hero" class="hero section">
         <div class="hero-cont container">
             <div class="hero-left">
                 <div class="trust-badge">🌟 Trusted by 10,000+ clients</div>
@@ -32,7 +33,7 @@
                 <p class="desc">Connect with top-rated professionals across medicine, law, design, and more.
                     Schedule appointments instantly and manage everything in one place.</p>
                 <div class="hero-actions">
-                    <a href="#" class="btn">Explore Services</a>
+                    <a href="#services" class="btn">Explore Services</a>
                     <a href="#" class="btn-outline">Create Account</a>
                 </div>
             </div>
@@ -86,47 +87,291 @@
             </div>
         </div>
     </section>
-    <section class="section section2">
+
+    <section id="services" class="section section2">
         <div class="container">
             <div class="text">
                 <div class="trust-badge">Why ServiFind</div>
-                <h1>Why choose Our Platform</h1>
-                <p class="desc">We provide a seamless experience for booking professional services with verified experts.</p>
+                <h2>Why Choose Our Platform</h2>
+                <p class="desc">We provide a seamless experience for booking professional services with verified
+                    experts.</p>
             </div>
             <div class="features">
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
                     <h3>Verified Professionals</h3>
-                    <p>Every professional is thoroughly vetted and verified to ensure the highest quality of service for our clients.</p>
+                    <p>Every professional is thoroughly vetted and verified to ensure the highest quality of service.
+                    </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">⚡</div>
                     <h3>Instant Booking</h3>
-                    <p>Book appointments in seconds. Our streamlined process eliminates waiting and paperwork completely.</p>
+                    <p>Book appointments in seconds. Our streamlined process eliminates waiting and paperwork.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">💎</div>
-                    <h3>Premiem Quality</h3>
-                    <p>Every professional is thoroughly vetted and verified to ensure the highest quality of service for our clients.</p>
+                    <h3>Premium Quality</h3>
+                    <p>Only the best make it onto our platform. Quality is checked and maintained at every step.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">.📅</div>
+                    <div class="feature-icon">📅</div>
                     <h3>Flexible Scheduling</h3>
-                    <p>Every professional is thoroughly vetted and verified to ensure the highest quality of service for our clients.</p>
+                    <p>Book at any time that suits you. Our system adapts to both provider and client.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">💬</div>
                     <h3>24/7 Support</h3>
-                    <p>/Every professional is thoroughly vetted and verified to ensure the highest quality of service for our clients.</p>
+                    <p>Our support team is always available to help you with any questions or issues.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🛡️</div>
                     <h3>Secure Payments</h3>
-                    <p>Every professional is thoroughly vetted and verified to ensure the highest quality of service for our clients.</p>
+                    <p>All transactions are encrypted and protected. Your financial info is always safe.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="about" class="section section3">
+        <div class="contenumain">
+            <div class="contenugauche">
+                <div class="icon">
+                    <div class="icon-img">🩺</div>
+                    <p>Medicine</p>
+                </div>
+                <div class="icon">
+                    <div class="icon-img">⚖️</div>
+                    <p>Law</p>
+                </div>
+                <div class="icon">
+                    <div class="icon-img">💻</div>
+                    <p>Development</p>
+                </div>
+                <div class="icon">
+                    <div class="icon-img">🎨</div>
+                    <p>Design</p>
+                </div>
+                <div class="icon">
+                    <div class="icon-img">📚</div>
+                    <p>Education</p>
+                </div>
+                <div class="icon">
+                    <div class="icon-img">🧠</div>
+                    <p>Psychology</p>
+                </div>
+            </div>
+
+            <div class="descrip">
+                <span class="aboutser">About ServiFind</span>
+                <h2>Connecting You with the Best Professionals</h2>
+                <p class="description">
+                    ServiFind is a modern platform designed to bridge the gap between clients and professional service
+                    providers.
+                    We make it easy to find, book, and manage appointments with experts across various domains.
+                </p>
+
+                <ul class="featuresserf">
+                    <li><span>✓</span> Access to 500+ verified professionals</li>
+                    <li><span>✓</span> 6 main service categories</li>
+                    <li><span>✓</span> Transparent pricing with no hidden fees</li>
+                    <li><span>✓</span> Secure and confidential booking process</li>
+                </ul>
+
+                <button class="btnbrowse" id="browsebtn">Browse Categories</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="contenumn">
+        <div class="counting">
+            <h2 class="counter" data-target="500">0</h2>
+            <p>Professionals</p>
+        </div>
+        <div class="counting">
+            <h2 class="counter" data-target="10000">0</h2>
+            <p>Happy Clients</p>
+        </div>
+        <div class="counting">
+            <h2 class="counter" data-target="25000">0</h2>
+            <p>Bookings Made</p>
+        </div>
+        <div class="counting">
+            <h2 class="counter" data-target="98">0</h2>
+            <p>Satisfaction Rate</p>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <p class="subtitle">
+                Don't just take our word for it — hear from professionals and clients
+                who trust ServiFind.
+            </p>
+
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>This site has saved me so much time and effort!</p>
+                        <div class="user">
+                            <div class="avatar">JD</div>
+                            <div>
+                                <h4>James D.</h4><span>Client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>I have tried several platforms, but ServiFind stands out for its ease of use.</p>
+                        <div class="user">
+                            <div class="avatar">MT</div>
+                            <div>
+                                <h4>Dr. Mark T.</h4><span>Client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>Needed urgent legal advice and found the perfect lawyer in minutes.</p>
+                        <div class="user">
+                            <div class="avatar">JR</div>
+                            <div>
+                                <h4>James R.</h4><span>Client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>Booking services feels effortless now. It's like everything just clicks.</p>
+                        <div class="user">
+                            <div class="avatar">AL</div>
+                            <div>
+                                <h4>Amina L.</h4><span>Entrepreneur</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>I love how fast I can connect with professionals. It saves me so much time.</p>
+                        <div class="user">
+                            <div class="avatar">YT</div>
+                            <div>
+                                <h4>Yassine T.</h4><span>Freelancer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>The support team is always there. That alone makes this platform worth it.</p>
+                        <div class="user">
+                            <div class="avatar">LN</div>
+                            <div>
+                                <h4>Lina N.</h4><span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>This site is a hidden gem! Always impressed by their quality work.</p>
+                        <div class="user">
+                            <div class="avatar">SK</div>
+                            <div>
+                                <h4>Sarah K.</h4><span>Client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>Incredible experience, the platform is very user-friendly and reliable.</p>
+                        <div class="user">
+                            <div class="avatar">JC</div>
+                            <div>
+                                <h4>Mrs. Julian C.</h4><span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>ServiFind made it incredibly easy to find a specialist. Smooth process.</p>
+                        <div class="user">
+                            <div class="avatar">SK</div>
+                            <div>
+                                <h4>Sarah K.</h4><span>Client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>This platform helped me reach more clients. Everything feels intuitive.</p>
+                        <div class="user">
+                            <div class="avatar">MT</div>
+                            <div>
+                                <h4>Dr. Mark T.</h4><span>Cardiologist</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-cta">
+                <h2>Ready to Get Started?</h2>
+                <p>Join thousands of satisfied clients and professionals who trust ServiFind for their service needs.
+                </p>
+                <button class="cta-btn">Sign up now</button>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="logo">Servi<span>Find</span></h3>
+                    <div class="socials">
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-linkedin'></i>
+                        <i class='bx bxl-twitter'></i>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div>
+                        <h4>Categories</h4>
+                        <a href="#">Healthcare</a>
+                        <a href="#">Mental Health</a>
+                        <a href="#">Development</a>
+                        <a href="#">Design</a>
+                        <a href="#">Education</a>
+                    </div>
+
+                    <div>
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Partners</a>
+                        <a href="#">Careers</a>
+                    </div>
+
+                    <div>
+                        <h4>Support</h4>
+                        <a href="#">Help Center</a>
+                        <a href="#">Reviews</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="JavaScript/mainPage.js"></script>
 </body>
 
