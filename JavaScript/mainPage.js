@@ -1,10 +1,5 @@
-/**
- * ServiFind Client-Side Scripts
- */
-
 document.addEventListener('DOMContentLoaded', () => {
     
-    // --- 1. Vertical Review Rotation (Hero Dashboard) ---
     const rotateHeroReviews = () => {
         const reviews = document.querySelectorAll('.single-review');
         if (reviews.length === 0) return;
@@ -16,8 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
             reviews[currentIndex].classList.add('active');
         }, 5000);
     };
-
-    // --- 2. Stats Counter Animation ---
     const setupStatsCounters = () => {
         const counters = document.querySelectorAll('.counter');
         const observerOptions = { threshold: 0.5 };
@@ -49,20 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
         counters.forEach(counter => observer.observe(counter));
     };
 
-    // --- 3. Infinite Smooth Slider Logic (Bottom Slider) ---
     const setupInfiniteSlider = () => {
         const track = document.querySelector('.slide-track');
         if (!track) return;
-
-        // Clone the content to create a seamless infinite loop
-        // We clone it once so we have [original][duplicate]
         const clones = track.innerHTML;
         track.innerHTML += clones;
-
-        // Optional: Pause on hover is already handled by CSS animation-play-state
     };
 
-    // --- 4. Interactive Elements ---
     const setupInteractivity = () => {
         const browseBtn = document.getElementById('browsebtn');
         if (browseBtn) {
@@ -82,8 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     };
-
-    // Initialize all
     rotateHeroReviews();
     setupStatsCounters();
     setupInfiniteSlider();
