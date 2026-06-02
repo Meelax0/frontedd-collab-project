@@ -1,4 +1,13 @@
-// 1. Get elements from HTML
+const menuToggle =
+  document.getElementById("menuToggle");
+
+const nav =
+  document.querySelector("nav");
+
+menuToggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
 const servicesGrid = document.getElementById('servicesGrid');
 const sortSelect = document.getElementById('sortSelect');
 

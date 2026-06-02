@@ -181,43 +181,63 @@ nav a.active {
 
 .services-layout {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
 }
 
+/* LEFT SIDEBAR CONTAINER */
 .filter-sidebar {
+  flex: 0 0 280px;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  padding: 20px;
+  padding: 24px;
   box-shadow: var(--shadow-sm);
-  width: 100%;
-}
-.filter-sidebar h3 {
-  display: none; 
+  position: sticky;
+  top: 100px;
 }
 
-.filter-group {
-  margin-bottom: 0; 
+.sidebar-title {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.sidebar-title h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 0;
 }
 
 .filter-group label {
-  margin-bottom: 0; 
-  white-space: nowrap;
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-mid);
+  margin-bottom: 10px;
 }
+
 select {
-  max-width: 250px; 
-  padding: 10px 14px;
+  width: 100%;
+  padding: 12px 14px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
   background: var(--white);
+  color: var(--text-dark);
+  font-weight: 500;
   outline: none;
   font-size: 0.95rem;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
+select:focus {
+  border-color: var(--accent);
+}
 /* FILTER CHIPS */
 .filter-chips {
   display: flex;
@@ -245,17 +265,6 @@ select {
   color: var(--white);
 }
 
-/* SELECT */
-select {
-  width: 100%;
-  padding: 14px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border);
-  background: var(--white);
-  outline: none;
-  font-size: 0.95rem;
-}
-
 /* RANGE */
 input[type="range"] {
   width: 100%;
@@ -264,14 +273,15 @@ input[type="range"] {
 
 .services-grid {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 30px;
-  width: 100%;
+  flex: 1;
 }
 /* SERVICE CARD */
 .service-card {
-  flex: 1 1 320px;    
-  max-width: 380px; 
+  flex: 0 1 calc(50% - 15px); 
+  min-width: 320px; 
+  max-width: 400px; 
   background: var(--white);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -280,8 +290,8 @@ input[type="range"] {
   transition: var(--transition);
 }
 .service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
 }
 
 /* IMAGE AREA */
@@ -424,36 +434,61 @@ input[type="range"] {
 }
 
 /* RESPONSIVE */
-/* RESPONSIVE */
-@media (max-width: 992px) {
+@media (max-width: 992px){
   .services-layout {
-    flex-direction: column;   /* Stacks sidebar on top of cards */
+    flex-direction: column;
   }
 
   .filter-sidebar {
+    flex: 1 1 100%;
+    width: 100%;
     position: static;
-    width: 100%;             /* Let sidebar expand fully on tablet */
   }
 }
+
 @media (max-width: 768px) {
-  .page-hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .filter-group {
-    flex-direction: column; /* Stacks label and select on mobile */
-    align-items: flex-start;
-  }
-
-  select {
-    max-width: 100%; /* Full width drop-down on small mobile phones */
+  .service-card {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
   .service-card-footer {
-    flex-direction: column; /* View Details and Book Now buttons stack on mobile */
+    flex-direction: column;
   }
 
   .btn-sm {
     width: 100%;
   }
+}
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--primary);
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+  }
+
+  nav.active {
+    display: flex;
+  }
+
 }
