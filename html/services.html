@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="../css/services.css">
+</head>
+<body>
+    <header>
+        <div class="headerCont container">
+            <a href="#" class="logo">Servi<span>Find</span></a>
+            <nav>
+                <a href="#hero" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#categories">Categories</a>
+            </nav>
+            <a href="html/logRegister.html" class="btn">Get Started</a>
+        </div>
+    </header>
+
+  <div id="header"></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <a href="#">Categories</a>
+        <span>/</span>
+        <span id="categoryTitle">Services</span>
+      </div>
+
+      <h1 id="pageTitle">Our Professionals</h1>
+      <p>Browse professionals and book the service you need.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="services-layout">
+
+        <aside class="filter-sidebar">
+          <div class="filter-group">
+            <label for="sortSelect">Sort By</label>
+            <select id="sortSelect">
+              <option value="rating">Highest Rating</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+            </select>
+          </div>
+        </aside>
+
+        <div class="services-grid" id="servicesGrid"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="../javascript/data.js"></script>
+  <script src="../javascript/services.js"></script>
+</body>
+</html>
