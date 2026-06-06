@@ -798,3 +798,54 @@ nav a.active {
         justify-content: center;
     }
 }
+.menu-toggle{
+    display:none;
+    font-size:2rem;
+    cursor:pointer;
+    color:var(--primary);
+}
+
+@media (max-width:768px){
+    .headerCont{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        flex-wrap:nowrap;
+    }
+
+    .btn{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:block;
+        margin-left:auto;
+    }
+    nav{
+        display:none;
+        position:absolute;
+        top:80px;
+        right:20px;
+        background:white;
+        flex-direction:column;
+        padding:20px;
+        border-radius:16px;
+        box-shadow:0 10px 25px rgba(0,0,0,0.1);
+        gap:20px;
+    }
+
+    nav.active{
+        display:flex;
+    }
+}
+@media (max-width:768px){
+
+    .right{
+        display:none;
+    }
+
+    .reviews{
+        display:none;
+    }
+
+}
