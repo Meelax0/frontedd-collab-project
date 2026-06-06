@@ -293,7 +293,6 @@ const data = {
       image: "../images/psychology/psy1.jpg",
 
       icon: "🧠",
-      badges: [""],
       badges: [
         "Stress Management",
         "Therapy Sessions",
