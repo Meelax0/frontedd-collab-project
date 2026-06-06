@@ -14,11 +14,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 body {
     background-color: #ffffff;
     color: var(--text-dark);
     padding: 20px 40px;
 }
+
 
 .breadcrumb {
     font-size: 13px;
