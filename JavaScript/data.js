@@ -22,6 +22,12 @@ const data = {
       image: "../images/doctors/doctor1.jpg",
 
       icon: "👨‍⚕️",
+      badges: [
+        " Board Certified",
+        "Board Certified",
+        "Online Available",
+        " Same Day Booking",
+      ],
 
       reviews: [
         {
@@ -58,6 +64,12 @@ const data = {
       image: "../images/doctors/dentist1.jpg",
 
       icon: "🦷",
+      badges: [
+        " Board Certified",
+        "7+ Years Exp.",
+        "Online Available",
+        " Flexible scheduling",
+      ],
 
       reviews: [
         {
@@ -89,6 +101,12 @@ const data = {
       image: "../images/doctors/dentist2.jpg",
 
       icon: "🦷",
+      badges: [
+        "Teeth Whitening",
+        "Orthodontics",
+        "Modern Equipment",
+        "Flexible scheduling",
+      ],
 
       reviews: [
         {
@@ -122,6 +140,12 @@ const data = {
       image: "../images/developers/dev1.jpg",
 
       icon: "💻",
+      badges: [
+        "Responsive Websites",
+        "React Specialist",
+        "Remote Available",
+        "Fast Delivery",
+      ],
 
       reviews: [
         {
@@ -155,6 +179,12 @@ const data = {
       image: "../images/tutors/tutor1.jpg",
 
       icon: "📚",
+      badges: [
+        "Exam Prep",
+        "7+ Years Teaching",
+        "All Levels",
+        "Online Sessions",
+      ],
 
       reviews: [
         {
@@ -187,6 +217,12 @@ const data = {
       image: "../images/lawyers/lawyer1.jpg",
 
       icon: "⚖️",
+      badges: [
+        "Business Contracts",
+        "10+ Years Experience",
+        "Legal Consulting",
+        "Certified Lawyer",
+      ],
 
       reviews: [
         {
@@ -218,6 +254,12 @@ const data = {
       image: "../images/lawyers/lawyer2.jpg",
 
       icon: "⚖️",
+      badges: [
+        "Family Law",
+        "Divorce Cases",
+        "Legal Support",
+        "Client Focused",
+      ],
 
       reviews: [
         {
@@ -251,6 +293,13 @@ const data = {
       image: "../images/psychology/psy1.jpg",
 
       icon: "🧠",
+      badges: [""],
+      badges: [
+        "Stress Management",
+        "Therapy Sessions",
+        "Mental Wellness",
+        "Online Consultation",
+      ],
 
       reviews: [
         {
@@ -282,6 +331,12 @@ const data = {
       image: "../images/psychology/psy2.jpg",
 
       icon: "🧠",
+      badges: [
+        "Child Therapy",
+        "Behavior Analysis",
+        "Emotional Support",
+        "School Anxiety Help",
+      ],
 
       reviews: [
         {
@@ -315,6 +370,12 @@ const data = {
       image: "../images/design/design1.jpg",
 
       icon: "🎨",
+      badges: [
+        "UI/UX Design",
+        "Mobile Interfaces",
+        "Modern Aesthetics",
+        "Fast Delivery",
+      ],
 
       reviews: [
         {
@@ -346,7 +407,12 @@ const data = {
       image: "../images/design/design2.jpg",
 
       icon: "🎨",
-
+      badges: [
+        "Logo Design",
+        "Brand Identity",
+        "Creative Direction",
+        "Professional Branding",
+      ],
       reviews: [
         {
           user: "Yacine",

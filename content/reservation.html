@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="../style/reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script defer src="../javascript/resrvation.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="top-bar">
+            <h1>Book Appointment</h1>
+            <p>Complete your reservation request</p>
+        </div>
+        <div class="content-area">
+            <div class="selected-professional">
+                <div class="professional-icon" id="professionalIcon">👨‍⚕️</div>
+                <div>
+                    <h2 id="professionalName">Dr Ahmed</h2>
+                    <p id="professionalSpecialty">Cardiologist</p>
+                </div>
+            </div>
+            <form id="reservationForm">
+                <div class="input-box">
+                    <label>Full Name</label> <input type="text" id="clientName"placeholder="Enter your name" required>
+                </div>
+                <div class="input-box"> 
+                    <label>Email</label> <input type="email" id="clientEmail" placeholder="Enter your email" required> 
+                </div>
+                <div class="input-box"> 
+                    <label>Phone Number</label> <input type="tel" id="clientPhone"placeholder="Enter your phone number" required> 
+                </div>
+                <div class="input-box"> <label>Select Date</label> <input type="date" id="bookingDate" required> </div>
+                <div class="input-box"> 
+                    <label>Notes</label> <textarea id="notes" rows="4" placeholder="Additional notes..."></textarea> 
+                </div> 
+                <button class="btn-action" type="submit">Confirm Reservation</button>
+            </form>
+            <div class="success-message" id="successMessage"> <i class="fa-solid fa-circle-check"></i> Reservation confirmed successfully! </div>
+        </div>
+    </div>
+</body>
+
+</html>

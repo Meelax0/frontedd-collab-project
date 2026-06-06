@@ -30,7 +30,6 @@ body {
   --radius-lg: 20px;
   --transition: all 0.3s cubic-bezier(.4,0,.2,1);
 }
-/* ===== AUTH PAGES ===== */
 
 .Login-auth,
 .register-auth {
@@ -70,7 +69,6 @@ body {
     font-size: 0.95rem;
 }
 
-/* ===== FORM GROUPS ===== */
 
 .login,
 .password,
@@ -109,7 +107,6 @@ body {
     background: var(--white);
 }
 
-/* ===== BUTTON ===== */
 
 .Login-auth button,
 .register-auth button {
@@ -132,7 +129,7 @@ body {
     box-shadow: 0 6px 20px rgba(10,65,116,0.25);
 }
 
-/* ===== AUTH FOOTER ===== */
+
 
 .auth-register {
     margin-top: 20px;
@@ -155,7 +152,7 @@ body {
 .hidden{
     display: none;
 }
-/* ===== RESPONSIVE ===== */
+
 
 @media (max-width: 600px) {
     .Login-auth .container,

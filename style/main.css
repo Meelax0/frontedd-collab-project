@@ -41,7 +41,7 @@ body {
     padding: 100px 0;
 }
 
-/* --- HEADER --- */
+
 header {
     position: sticky;
     top: 0;
@@ -89,7 +89,7 @@ nav a.active {
     color: var(--primary);
 }
 
-/* --- BUTTONS --- */
+
 .btn {
     text-decoration: none;
     background: var(--primary);
@@ -126,7 +126,7 @@ nav a.active {
     transform: translateY(-2px);
 }
 
-/* --- HERO SECTION --- */
+
 .hero {
     background-color: var(--light-bg);
     position: relative;
@@ -182,7 +182,7 @@ nav a.active {
     gap: 16px;
 }
 
-/* --- RIGHT SIDE: LARGE FLOATING REVIEWS --- */
+
 .right {
     flex: 1.2;
     display: flex;
@@ -285,7 +285,6 @@ nav a.active {
     color: var(--primary);
 }
 
-/* Floating Badges */
 .floating-badge {
     position: absolute;
     background: white;
@@ -361,7 +360,6 @@ nav a.active {
     }
 }
 
-/* --- SECTION 2 — FEATURES --- */
 .section2 {
     background-color: var(--light-bg);
 }
@@ -423,7 +421,7 @@ nav a.active {
     line-height: 1.6;
 }
 
-/* --- SECTION 3 — ABOUT --- */
+
 .contenumain {
     display: flex;
     align-items: center;
@@ -523,7 +521,7 @@ nav a.active {
     transform: translateY(-3px);
 }
 
-/* --- SECTION 4 — STATS --- */
+
 .contenumn {
     background: var(--primary);
     color: white;
@@ -553,7 +551,6 @@ nav a.active {
     font-size: 0.8rem;
 }
 
-/* --- REVIEWS SLIDER (SMOOTH FIX) --- */
 .reviews {
     padding: 100px 0;
     background: #fff;
@@ -659,7 +656,6 @@ nav a.active {
     }
 }
 
-/* --- FOOTER --- */
 .footer {
     background: linear-gradient(135deg, var(--primary), var(--accent));
     color: white;
@@ -772,7 +768,6 @@ nav a.active {
     transform: translateX(4px);
 }
 
-/* --- MOBILE --- */
 @media (max-width: 768px) {
 
     .footer {

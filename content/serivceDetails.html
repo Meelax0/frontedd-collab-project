@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - noureddin </title>
+    <link rel="stylesheet" href="../style/serviceDetails.css">
+</head>
+
+<body>
+
+    <nav class="breadcrumb">
+        Home &gt; Categories &gt; Medicine &gt; <span class="current">Professional</span>
+    </nav>
+
+    <div class="container">
+
+        <main class="main-content">
+
+            <section class="profile-card">
+                <div class="profile-header">
+                    <div class="avatar">SM</div>
+                    <div class="profile-info">
+                        <h1 id="name"></h1>
+                        <p class="specialty" id="specialty"></p>
+                        <p class="category" id="category"></p>
+                    </div>
+                </div>
+
+                <div class="rating-container">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text" id="reviewsCount"><strong id="rating"></strong></span>
+                </div>
+
+                <div class="about-section">
+                    <h2>About</h2>
+                    <p id="description"></p>
+                </div>
+
+                <div class="badges-grid">
+                    <div class="badge" id="badge1"><i class="fa-solid fa-check"></i></div>
+                    <div class="badge" id="badge2"><i class="fa-solid fa-check"></i></div>
+                    <div class="badge" id="badge3"><i class="fa-solid fa-check"></i></div>
+                    <div class="badge" id="badge4"><i class="fa-solid fa-check"></i></div>
+                </div>
+            </section>
+
+            <section class="reviews-card">
+                <h2>Client Reviews</h2>
+
+                <div id="reviewsContainer"></div>
+
+                <div id="reviewsContainer"></div>
+
+                <div id="reviewsContainer"></div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="price-section">
+                <span class="price" id="price"></span> <span class="per-session">/ session</span>
+            </div>
+            <div class="availability">
+                <span class="status-dot"></span> Available for booking
+            </div>
+
+            <ul class="features-list" id="badgesContainer">
+
+            </ul>
+
+            <button class="btn btn-primary" id="btnBook">Book Now</button>
+            <button class="btn btn-secondary" id="btnServices">View All Services</button>
+        </aside>
+
+    </div>
+
+    <script src="../javascript/serviceDetails.js"></script>
+</body>
+
+</html>

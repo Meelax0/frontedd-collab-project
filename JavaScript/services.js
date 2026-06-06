@@ -108,7 +108,7 @@ function viewDetails(id) {
     }
   }
   localStorage.setItem("selectedProfessional", JSON.stringify(selected));
-  window.location.href = "service-details.html";
+  window.location.href = "serivceDetails.html";
 }
 
 function bookService(id) {

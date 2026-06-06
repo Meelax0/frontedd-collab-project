@@ -1,0 +1,149 @@
+:root {
+
+    --primary: #244375;
+
+    --secondary: #1a73e8;
+
+    --dark-blue: #041e49;
+
+    --bg: #f8fafc;
+
+    --white: #ffffff;
+
+    --text-main: #1e293b;
+
+    --text-muted: #64748b;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.main-container {
+    background: var(--white);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.top-bar {
+    background: linear-gradient(135deg,
+            var(--dark-blue),
+            var(--primary));
+
+    color: white;
+    padding: 35px;
+    text-align: center;
+}
+
+.top-bar h1 {
+    margin-bottom: 10px;
+}
+
+.content-area {
+    padding: 35px;
+}
+
+.selected-professional {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+
+.professional-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--primary);
+    color: white;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+    border-color: var(--secondary);
+}
+
+.btn-action {
+    width: 100%;
+    background: var(--secondary);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.success-message {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #22c55e;
+    color: white;
+    padding: 18px 24px;
+    border-radius: 14px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    animation: slideIn 0.4s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
