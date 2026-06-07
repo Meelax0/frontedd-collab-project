@@ -767,85 +767,205 @@ nav a.active {
     color: white;
     transform: translateX(4px);
 }
+.menu-toggle{display: none;}
+
+
+@media (max-width: 992px) {
+    .contenugauche{display: none;}
+    .right{display: none;}
+    .contenumn{display: none;}
+    .hero-cont {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-left {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .right {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .contenumain {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .descrip {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featuresserf li {
+        text-align: left;
+    }
+}
 
 @media (max-width: 768px) {
+    .contenumn{display: none;}
+    .section {
+        padding: 60px 0;
+    }
+
+    .headerCont {
+        position: relative;
+        padding: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 2;
+    }
+
+    header .btn {
+        display: none; 
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: var(--white);
+        flex-direction: column;
+        padding: 30px 20px;
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-lg);
+        gap: 24px;
+        text-align: center;
+        border: 1px solid var(--border);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .dashboard-wrapper {
+        height: 380px;
+    }
+
+    .main-review-card {
+        padding: 24px;
+        border-radius: 24px;
+    }
+
+    .floating-badge {
+        padding: 12px 18px;
+        border-radius: 16px;
+    }
+
+    .badge-top {
+        right: -10px;
+    }
+
+    .badge-bottom {
+        left: -10px;
+    }
+
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .contenugauche {
+        padding: 20px;
+        border-radius: 24px;
+        width: 100%;
+    }
+
+    .descrip h2 {
+        font-size: 2rem;
+    }
+
+    .contenumn {
+        padding: 40px 0;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .reviews h2 {
+        font-size: 2rem;
+    }
+
+    .review-card {
+        width: 290px;
+        padding: 24px;
+    }
 
     .footer {
-        padding-top: 240px;
+        padding-top: 180px;
+        margin-top: 160px;
     }
 
     .footer-cta {
-        top: -150px;
-        padding: 40px 24px;
+        position: absolute;
+        top: -120px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        padding: 35px 20px;
     }
 
     .footer-cta h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .footer-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 40px;
     }
 
     .footer-links {
         justify-content: center;
-        gap: 40px;
+        gap: 32px;
     }
 
     .socials {
         justify-content: center;
     }
 }
-.menu-toggle{
-    display:none;
-    font-size:2rem;
-    cursor:pointer;
-    color:var(--primary);
-}
 
-@media (max-width:768px){
-    .headerCont{
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-        flex-wrap:nowrap;
+@media (max-width: 480px) {
+    .contenumn{display: none;}
+    .hero-title {
+        font-size: 2.2rem;
     }
 
-    .btn{
-        display:none;
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
     }
 
-    .menu-toggle{
-        display:block;
-        margin-left:auto;
-    }
-    nav{
-        display:none;
-        position:absolute;
-        top:80px;
-        right:20px;
-        background:white;
-        flex-direction:column;
-        padding:20px;
-        border-radius:16px;
-        box-shadow:0 10px 25px rgba(0,0,0,0.1);
-        gap:20px;
+    .hero-actions .btn, 
+    .hero-actions .btn-outline {
+        width: 100%;
+        text-align: center;
     }
 
-    nav.active{
-        display:flex;
+    .contenugauche {
+        grid-template-columns: 1fr;
     }
 }
-@media (max-width:768px){
 
-    .right{
-        display:none;
-    }
-
-    .reviews{
-        display:none;
-    }
-
+#exploreBtn {
+    display: inline-block; 
+}
+#logoutBtn {
+    display: none;
 }

@@ -73,12 +73,52 @@ document.addEventListener('DOMContentLoaded', () => {
     setupInfiniteSlider();
     setupInteractivity();
 });
-const menuToggle=document.getElementById("menuToggle");
+const menuToggle =
+document.getElementById("menuToggle");
 
-const nav=document.querySelector("nav");
+const nav =
+document.querySelector("nav");
 
-menuToggle.addEventListener("click",()=>{
+if(menuToggle){
 
-    nav.classList.toggle("active");
+    menuToggle.addEventListener("click",()=>{
+
+        nav.classList.toggle("active");
+
+    });
+
+}
+
+const loggedInUser =
+JSON.parse(localStorage.getItem("loggedInUser"));
+
+const getStartedBtn =
+document.getElementById("getStartedBtn");
+
+const exploreBtn =
+document.getElementById("exploreBtn");
+
+const logoutBtn =
+document.getElementById("logoutBtn");
+
+if(loggedInUser){
+
+    getStartedBtn.style.display = "none";
+
+    exploreBtn.style.display = "inline-block";
+
+    logoutBtn.style.display = "inline-block";
+
+}else{
+
+    logoutBtn.style.display = "none";
+
+}
+
+logoutBtn.addEventListener("click",()=>{
+
+    localStorage.removeItem("loggedInUser");
+
+    window.location.reload();
 
 });

@@ -544,33 +544,40 @@ input[type="range"] {
 }
 .menu-toggle {
   display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--primary);
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
+  .headerCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  
 
   .menu-toggle {
     display: block;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: var(--primary);
+    margin-left: auto;
   }
 
   nav {
     display: none;
-    flex-direction: column;
     position: absolute;
     top: 80px;
     right: 20px;
     background: white;
+    flex-direction: column;
     padding: 20px;
     border-radius: 16px;
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    gap: 20px;
   }
 
   nav.active {
     display: flex;
   }
-
 }
